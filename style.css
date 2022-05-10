@@ -1,0 +1,218 @@
+/* the following code is how my website is stylized using CSS - all of the corresponding classes are uniquly modified to my liking */
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+section{
+    /* height: 500px; */
+    background-color: white;
+    /* border: solid black 1px; */
+
+}
+
+.hero{
+    background-color: #343c46;
+    height: 100vh;
+    color: #d9e1eb;
+    font-size: 40px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo{
+    display: none;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    width: 450px;
+    justify-content: space-around;
+    font-size: 25px;
+}
+
+ul.show{
+    display: block;
+}
+
+li{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 70px;
+    margin: 0;
+    padding-left: 15px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+p{
+    margin: 0;
+    font-size: 35px;
+    font-weight: 300; 
+}
+
+ .subtext{
+    font-size: 10px;
+    font-weight: 300;
+
+} 
+
+.hero-area {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text{
+    margin-left: 40px;
+    margin-bottom: 250px;
+}
+
+.button{
+    width: 200px;
+    height: 45px;
+    border-radius: 40px;
+    background-color: rgb(186, 212, 67);
+    text-align: center;
+    font-size: 35px;
+    font-weight: 300; 
+    padding-top: 1px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+.button:hover{
+    background-color: rgb(161, 189, 36);
+}
+
+.button:active{
+    background-color: rgb(127, 149, 29);
+    color: #000000;
+}
+
+.socials{
+    padding-bottom: 200px;
+    margin: 20px;
+}
+
+.social{
+    margin: 20px;
+}
+
+.subsection{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.projectboxes{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.profilePhoto{
+    width: 200px;
+    border-radius: 200px;
+    padding-top: 20px;
+}
+
+.profilePhotoMain{
+    display: flex;
+    align-items: center;
+}
+
+.projects {
+    width: 300px;
+    height: 500px;
+    box-shadow: 5px 5px 20px rgb(117, 113, 113); 
+    margin: 10px;
+
+}
+
+.projectMain{
+    display: flex;
+    justify-content: space-around;
+}
+/* this is used on the how the project  */
+@media only screen and (max-width: 1000px) {
+    .projectMain{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+}
+
+.projectjpeg{
+    margin-top: 25px;
+    width: 300px;
+    border-radius: 125px;
+}
+
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.project-link{
+    text-decoration: none;
+    color: #a75c5c;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger{
+    display: none;
+}
+
+.hamburger:focus{
+    outline: 0;
+
+}
+ 
+/* the following code is used to adjust the styling of my website to accomadate mobile like platforms re nav and use of hamburger style button */
+@media only screen and (max-width:1000px) {
+    .hamburger{
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font: 50px;
+        margin: 20px;
+        align-self: flex-end;
+    }    
+
+    ul{
+        display: none;
+        background-color: #5d6c7e;
+        margin: 0px;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #5d6c7e;
+    }
+}
